@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="error.css">
+    <title>Formulario 4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card-body border" style="width: 50rem;">
+                <h5 class="card-title">Datos de tu tarjeta</h5>
+                <form action="" id="formulario">
+                    <div class="form-group row border">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Nombre(*):</label>
+                                <input id="nombre" name="nombre" type="text" class="form-control" required>
+                                <p id="errornombre" class="d-none text-danger">Solo letras</p>
+                            </div>                  
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Número(*):</label>
+                                <input id="numero" name="numero" type="text" class="form-control" required>
+                                <p id="errornumero" class="d-none text-danger">solo numero</p>
+                            </div>                  
+                        </div>
+                    
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Mes(*)</label>
+                                <select id="mes" name="mes" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                  </select>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Año(*)</label>
+                                <select id="anios" name="anios" class="form-control">
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                  </select>
+                            </div> 
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>CVC(*)</label>
+                                <input id="cvc" name="cvc" type="number" class="form-control">
+                                <p id="errorcvc" class="d-none text-danger">son 3 digitos y solo numeros</p>
+                            </div>                  
+                        </div>  
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit"><i class="fa fa-send"></i>Registrar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                
+            </div>  
+        </div>
+    </div>
+    <script src="validar.js"></script>
+</body>
+</html>
